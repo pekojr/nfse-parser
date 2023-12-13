@@ -5,6 +5,7 @@ class NfseParser extends HTMLElement {
         super();
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.innerHTML = `
+            <h2>Upload de Arquivo Nfse e inserir na base</h2>    
             <input type="file" id="fileInput">
             <table id="table"></table>
             <button id="insertButton">Inserir</button>
