@@ -129,7 +129,7 @@ class NfseParser extends HTMLElement {
         console.log(this.formatter(this.json));
         try{
             const token = urlParams.get('access_token');
-            const response = await fetch(urlAPI, {
+            const response = await fetch(urlAPI+'/notas', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
